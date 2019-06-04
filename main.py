@@ -4,12 +4,12 @@ from spider import Spider
 from domain import *
 from general import *
 
-PROJECT_NAME = 'Amazon'
-HOMEPAGE = 'http://www.amazon.in'
+PROJECT_NAME = 'Dell'
+HOMEPAGE = 'http://www.Dell.com/en-in'
 DOMAIN_NAME = get_domain_name(HOMEPAGE)
 QUEUE_FILE = PROJECT_NAME + '/queue.txt'
 CRAWLED_FILE = PROJECT_NAME + '/crawled.txt'
-NUMBER_OF_THREADS = 4
+NUMBER_OF_THREADS = 10
 queue = Queue()
 Spider(PROJECT_NAME, HOMEPAGE, DOMAIN_NAME)
 
